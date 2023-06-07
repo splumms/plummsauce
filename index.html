@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+    <title>My Site</title>
+  </head>
+  <body>
+    <header>
+      <div class="grid-center">
+        <div class="background">
+          <img class="flower large one" src="assets/images/sunflower.svg" alt="sunflower">
+          <img class="flower large two" src="assets/images/sunflower.svg" alt="sunflower">
+          <img class="flower med one" src="assets/images/sunflower.svg" alt="sunflower">
+          <img class="flower med two" src="assets/images/sunflower.svg" alt="sunflower">
+          <img class="flower med three" src="assets/images/sunflower.svg" alt="sunflower">
+          <img class="flower med four" src="assets/images/sunflower.svg" alt="sunflower">
+          <img class="flower small one" src="assets/images/sunflower.svg" alt="sunflower">
+          <img class="flower small two" src="assets/images/sunflower.svg" alt="sunflower">
+          <img class="flower small three" src="assets/images/sunflower.svg" alt="sunflower">
+          <img class="flower small four" src="assets/images/sunflower.svg" alt="sunflower">
+        </div>
+        <div class="col-1">
+          <div class="menu-left">
+            <a class="logo" href="#">
+              <img src="assets/images/plummsauce-logo.svg" alt="PlummSauce brand logo">
+            </a>
+            <div class="contact-icons">
+              <a class="email" href="mailto:saraplummer@protonmail.com">
+                <img src="assets/images/envelope.svg" alt="Envelope Icon">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-10">
+          <div class="header-text">
+            <h1 class="slideInDown">Hi there!</h1>
+            <div class="type-container">
+              <p class="typed-out">My name is Sara, it's nice to meet you.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="menu-right">
+            <div class="menu-item about">
+              <a href="#about">About</a>
+            </div>
+            <div class="menu-item portfolio">
+              <a href="#portfolio">Work</a>
+            </div>
+            <div class="menu-item contact">
+              <a href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="about">
+        <div class="grid-center">
+          <div class="col-4_md-8_sm-10">
+            <div class="info">
+              <h1>About</h1>
+              <p>
+                A little bit about me...
+                I'm a Toronto based web developer with a "really good" coffee
+                addiction and a love for animals (particularly dogs and horses).
+                I went to school for Animal Biology specializing in behaviour 
+                and nutrition, but when the pandemic hit and I found myself with
+                a lot of time on my hands I decided I'd learn how to code. Fast 
+                forward 2 years and I'm now working full time as a web-developer.
+              </p>
+              <p>
+                If you're surprised by the above switch in fields, you're not 
+                the only one. If you had asked me 3 years ago what I would 
+                be doing now, I would never have guessed this...and while I would 
+                never go so far as to say I'm grateful for the pandemic I can 
+                say that in the long run it changed my life for the better. Was 
+                that too cheesy? Probably, but you've now gotten to know me a 
+                little better.
+              </p>
+            </div>
+          </div>
+          <div class="col-4_md-8">
+            <div class="tenor-gif-embed" data-postid="5077713" data-share-method="host" data-aspect-ratio="1.66372" data-width="100%"><a href="https://tenor.com/view/omg-hi-dog-energetic-gif-5077713">Omg Hi GIF</a>from <a href="https://tenor.com/search/omg-gifs">Omg GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+          </div>
+          <div class="col-8 sm-hidden">
+            <div class="gallery">
+              <div class="img-container">
+                <img class="gallery-image" src="assets/images/blue.jpeg" alt="Dog">
+              </div>
+
+              <div class="img-container">
+                <img class="gallery-image" src="assets/images/darcy.jpeg" alt="The other dog">
+              </div>
+
+              <div class="img-container">
+                <img class="gallery-image" src="assets/images/dogs.jpeg" alt="Dogs">
+              </div>
+
+              <div class="img-container">
+                <img class="gallery-image" src="assets/images/our-little-family.jpg" alt="Family portrait - currently 50% dog">
+              </div>
+
+              <div class="img-container">
+                <img class="gallery-image" src="assets/images/me-portrait.jpeg" alt="That's me.">
+              </div>
+
+              <div id="img-modal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="modal-image">
+                <div id="caption"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio">
+        <div class="grid-center">
+          <div class="col-9_sm-11">
+            <h1>Work</h1>
+            <h4>Some of the cool stuff I've worked on</h4>
+            <div class="projects-container">
+
+              <a class="project" href="https://datasets.filecoin.io/">
+                <div class="description">
+                  <h6>Dataset Explorer</h6>
+                  <p>An interface for storing datasets from various initiatives and sources.</p>
+                </div>
+                <img src="assets/images/gears.svg" alt="gears">
+              </a>
+              <a class="project" href="https://green.filecoin.io/">
+                <div class="description">
+                  <h6>green.filecoin.io</h6>
+                  <p>A static microsite for Filecoin Green who aims to measure environmental impact of filecoin.</p>
+                </div>
+                <img src="assets/images/gears.svg" alt="gears">
+              </a>
+              <a class="project" href="https://mpw.org/">
+                <div class="description">
+                  <h6>MPW</h6>
+                  <p>Muscatine Power and Water is the largest municipal electric utility in Iowa. This site showcases services, provides updates to clients and provides a point of contact for existing and new clients.</p>
+                </div>
+                <img src="assets/images/gears.svg" alt="gears">
+              </a>
+                
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="content">
+          <div class="grid-center">
+            <div class="col-7">
+              <h1 class="heading">Get in touch.</h1>
+              <h5 class="subheading">I'd love to hear from you. Whether you've got a project in mind or just want to connect, reach out below.</h5>
+            </div>
+            <div class="col-6">
+              <div class="socials-container">
+                <a class="icon" href="mailto:saraplummer@protonmail.com">
+                  <img src="assets/images/open-envelope.svg" alt="">
+                </a>
+                <a class="icon" href="https://www.instagram.com/splumms/">
+                  <img src="assets/images/instagram.svg" alt="">
+                </a>
+                <a class="icon" href="https://www.linkedin.com/in/sara-plummer-921586120/">
+                  <img src="assets/images/linked-in.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="content">
+
+      </div>
+    </footer>
+    <script>
+      const modal = document.getElementById("img-modal");
+      const close = document.getElementsByClassName("close")[0];
+
+      close.onclick = function() {
+        modal.style.display = "none";
+      }
+
+      modal.onclick = function() {
+        modal.style.display = "none";
+      }
+
+      // Insert image in modal and use alt for caption
+      let imgs = document.getElementsByClassName("gallery-image");
+      let modalImg = document.getElementById("modal-image");
+      let captionText = document.getElementById("caption");
+      for (let i = 0; i < imgs.length; i++) {
+        let img = imgs[i];
+        img.onclick = function() {
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+      }
+
+      const sections = document.querySelectorAll("section");
+      const items = Array.from(document.getElementsByClassName("menu-item"));
+      console.log(items)
+
+      window.addEventListener("scroll", () => {
+        let current = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          if(pageYOffset >= (sectionTop - 100)) {
+            current = section.getAttribute("id");
+          }
+        })
+
+        items.forEach( li => {
+          li.classList.remove("active");
+          if(li.classList.contains(current)){
+            li.classList.add("active");
+          }
+        })
+      })
+
+    </script>
+  </body>
+</html>

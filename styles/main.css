@@ -1,0 +1,595 @@
+@font-face {
+  font-family: "Type";
+  src: url("assets/fonts/SpecialElite-Regular.ttf") format("ttf");
+}
+html, body {
+  background-color: #fffdfa;
+  color: #602556;
+  font-size: 16px;
+  font-family: "Couier Prime", monospace;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Libre Baskerville", serif;
+  font-weight: normal;
+  margin-top: 0rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.75rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1.125rem;
+  line-height: 1.4;
+}
+
+img {
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+figcaption {
+  font-size: 0.875rem;
+  opacity: 0.75;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  position: relative;
+  padding-top: 3rem;
+  height: 100vh;
+}
+header .header-text {
+  text-align: center;
+  transform: translateY(30vh);
+}
+header .header-text h1 {
+  font-size: 10rem;
+  margin-bottom: 1.5rem;
+}
+header .header-text .typed-out {
+  color: #58142E;
+  font-size: 2rem;
+}
+@media screen and (max-width: 53.125rem) {
+  header .header-text .typed-out {
+    display: none;
+  }
+}
+header .menu-left, header .menu-right {
+  position: fixed;
+  z-index: 99;
+  height: 100vh;
+}
+@media screen and (max-width: 53.125rem) {
+  header .menu-left, header .menu-right {
+    display: none;
+  }
+}
+header .menu-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (max-width: 53.125rem) {
+  header .menu-left {
+    display: none;
+  }
+}
+header .menu-left .logo img {
+  position: relative;
+  top: -2rem;
+}
+@media screen and (max-width: 53.125rem) {
+  header .menu-left .logo img {
+    display: none;
+  }
+}
+header .menu-left .email img {
+  position: relative;
+  bottom: 2rem;
+}
+header .menu-right {
+  color: #8d1128;
+  right: 1.5rem;
+  top: 2.5rem;
+}
+header .menu-right :nth-child(2) {
+  top: -0.5rem;
+}
+header .menu-right :nth-child(3) {
+  top: -1rem;
+}
+header .menu-right .menu-item {
+  position: relative;
+  height: 4rem;
+  width: 7rem;
+  text-align: center;
+  line-height: 4;
+  opacity: 0.8;
+  transition: 0.3s ease all;
+}
+header .menu-right .menu-item:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+header .menu-right .menu-item.active {
+  transition: 0.25s ease all;
+  background-color: #8d1128;
+  color: #fffdfa;
+}
+header .background {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+header .background .flower {
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s ease all;
+}
+header .background .flower:hover {
+  opacity: 0.5;
+}
+header .background .large {
+  width: 30rem;
+}
+header .background .large.one {
+  top: -6rem;
+  left: 7rem;
+}
+header .background .large.two {
+  top: 24rem;
+  right: -2rem;
+}
+header .background .med {
+  width: 22rem;
+}
+header .background .med.one {
+  top: -5rem;
+  left: 33rem;
+}
+header .background .med.two {
+  top: 22rem;
+  left: 15rem;
+}
+header .background .med.three {
+  top: 4rem;
+  right: 7rem;
+}
+header .background .med.four {
+  top: 12rem;
+  left: -12rem;
+}
+header .background .small {
+  width: 15rem;
+}
+header .background .small.one {
+  top: 25rem;
+  right: 37rem;
+}
+header .background .small.two {
+  top: 29rem;
+  right: 25rem;
+}
+header .background .small.three {
+  top: 17rem;
+  left: 6rem;
+}
+header .background .small.four {
+  top: 3rem;
+  right: 27rem;
+}
+
+#about, #portfolio, #contact {
+  min-height: 100vh;
+  margin-bottom: 7rem;
+}
+
+#about {
+  padding-top: 2rem;
+  padding-bottom: 9rem;
+  color: #1E0108;
+}
+#about .info {
+  padding-right: 2rem;
+}
+#about .info h1 {
+  margin-top: 0.5rem;
+}
+#about .tenor-gif-embed {
+  top: 35%;
+}
+#about .gallery {
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#about .gallery .img-container {
+  width: 10rem;
+  height: 10rem;
+  cursor: pointer;
+}
+#about .gallery .img-container:hover {
+  opacity: 0.7;
+}
+#about .gallery .img-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#portfolio {
+  padding-top: 2rem;
+  color: #1E0108;
+}
+#portfolio h4 {
+  padding-bottom: 2rem;
+}
+#portfolio .project {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem;
+}
+#portfolio .project:hover .description p:before {
+  width: 100%;
+}
+#portfolio .project .description {
+  display: flex;
+  flex-direction: column;
+  margin-right: 3rem;
+  position: relative;
+}
+#portfolio .project .description p {
+  padding-right: 5rem;
+  position: relative;
+}
+@media screen and (max-width: 40rem) {
+  #portfolio .project .description p {
+    padding-right: 0;
+  }
+}
+#portfolio .project .description p:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
+  height: 2px;
+  width: 0;
+  border-radius: 2px;
+  background-color: #602556;
+  transition: width ease 0.3s;
+}
+#portfolio .project .description p:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -2.25rem;
+  width: 2px;
+  height: calc(100% + 3.25rem);
+  border-radius: 2px;
+  background-color: #602556;
+}
+#portfolio .project h6 {
+  transition: 0.25s ease all;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+#portfolio .project h6:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 65%;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #602556;
+}
+@media screen and (max-width: 53.125rem) {
+  #portfolio .project h6:after {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 40rem) {
+  #portfolio .project h6:after {
+    width: 25%;
+  }
+}
+#portfolio .project img {
+  width: 15rem;
+  margin: 0 auto;
+}
+
+#contact {
+  text-align: center;
+  position: relative;
+}
+#contact .content {
+  position: absolute;
+  bottom: 30%;
+}
+#contact .heading {
+  font-size: 4rem;
+  font-weight: bold;
+}
+@media screen and (max-width: 53.125rem) {
+  #contact .heading {
+    font-size: 2rem;
+  }
+}
+#contact .subheading {
+  font-family: "Couier Prime", monospace;
+}
+@media screen and (max-width: 53.125rem) {
+  #contact .subheading {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (max-width: 40rem) {
+  #contact .subheading {
+    font-size: 1rem;
+  }
+}
+#contact .socials-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 3rem;
+}
+#contact .socials-container .icon img {
+  width: 3rem;
+  transition: 0.2s ease all;
+}
+@media screen and (max-width: 40rem) {
+  #contact .socials-container .icon img {
+    width: 2rem;
+  }
+}
+#contact .socials-container .icon:hover img {
+  transform: scale(1.2);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  padding-top: 5rem;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.modal .modal-content {
+  margin: auto;
+  display: block;
+  height: 80%;
+  max-height: 700px;
+}
+.modal #caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #fffdfa;
+  padding: 0.75rem 0;
+  height: 10rem;
+}
+.modal .modal-content, .modal #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.modal .close {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  top: 2rem;
+  right: 2rem;
+  color: #fffdfa;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.modal .close:hover,
+.modal .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.type-container {
+  display: inline-block;
+}
+.type-container .typed-out {
+  overflow: hidden;
+  border-right: 0.15em solid transparent;
+  white-space: nowrap;
+  animation: typing 2.5s steps(30, end) forwards, blinking 0.9s infinite;
+  animation-delay: 2s;
+  width: 0;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blinking {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: #c6153a;
+  }
+}
+
+.carousel {
+  box-sizing: border-box;
+  color: #fffdfa;
+}
+.carousel .slideshow-container {
+  position: relative;
+  margin: auto;
+  padding-bottom: 1rem;
+}
+.carousel .mySlides {
+  display: none;
+}
+.carousel .mySlides .img-container {
+  width: 20rem;
+  height: 30rem;
+}
+.carousel .mySlides .img-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.carousel .prev, .carousel .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -1.875rem;
+  padding: 1rem;
+  color: #fffdfa;
+  font-weight: bold;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.carousel .prev.hover, .carousel .next.hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.carousel .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.carousel .text, .carousel .numbertext {
+  padding: 0.5rem 0.75rem;
+  position: absolute;
+  bottom: 0.5rem;
+}
+.carousel .text {
+  width: 100%;
+  text-align: center;
+}
+.carousel .numbertext {
+  top: 0;
+}
+.carousel .dot-controls {
+  text-align: center;
+  padding-left: 1.5rem;
+}
+.carousel .dot {
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+  margin: 0 2px;
+  background-color: #fffdfa;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.carousel .dot:hover {
+  background-color: #c6153a;
+}
+.carousel .active {
+  background-color: rgba(198, 21, 58, 0.5);
+}
+.carousel .fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.slideInDown {
+  animation-name: slideInDown;
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+}
+@keyframes slideInDown {
+  0% {
+    transform: translateY(-200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 1060px) {
+  html, body {
+    font-size: 1rem;
+  }
+  header .header-text h1 {
+    font-size: 6rem;
+  }
+  header .header-text .typed-out {
+    font-size: 1.5rem;
+  }
+  #about .tenor-gif-embed {
+    top: 0;
+  }
+  #about .info {
+    padding-right: 0;
+  }
+  #portfolio .project img {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */
